@@ -1,0 +1,4 @@
+1. Create a class. Class have attributes and functions.
+2. Create a def init function and initialise attributes of the class to this function using self.
+3. Now in whole class these attributes will be used with self.
+4. Now create different functions to use in the class.

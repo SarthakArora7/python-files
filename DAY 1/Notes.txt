@@ -1,0 +1,1 @@
+1. In Python, you don't need to declare types of variables ahead of time. The interpreter automatically detects the type of the variable by the data it contains. To assign value to a variable equal sign ( = ) is used. The = sign is also known as the assignment operator.

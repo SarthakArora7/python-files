@@ -1,0 +1,6 @@
+Parameter - The name of the data being passed on.
+Argument - The actual value of the data being passed on.
+
+Mutable vs Immutable :- https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/
+
+join() method - https://www.geeksforgeeks.org/python-string-join-method/
