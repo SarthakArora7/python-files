@@ -16,6 +16,10 @@ BACKGROUND_COLOR = (0, 0, 0)  # Black
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Snake Game")
 
+# Load background
+background_img = pygame.image.load("background.png")  # Optional background
+background_img = pygame.transform.scale(background_img, (WIDTH, HEIGHT))
+
 # Initialize game objects
 snake = Snake()
 food = Food()
@@ -25,7 +29,7 @@ clock = pygame.time.Clock()
 # Game loop
 running = True
 while running:
-    screen.fill(BACKGROUND_COLOR)  # Clear screen
+    screen.blit(background_img, (0, 0))  # Draw background image
 
     # Handle events
     for event in pygame.event.get():
