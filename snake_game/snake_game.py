@@ -3,18 +3,22 @@ import time
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
+from start_screen import show_start_screen
+from end_screen import show_game_over_screen
 
 # Initialize Pygame
 pygame.init()
 
 # Constants
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 700, 600
 GRID_SIZE = 20
 BACKGROUND_COLOR = (0, 0, 0)  # Black
 
 # Create screen
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Snake Game")
+
+show_start_screen(screen)
 
 # Load background
 background_img = pygame.image.load("background.png")  # Optional background
@@ -74,8 +78,9 @@ while running:
 
     # Collision with tail
     if snake.body[0] in snake.body[1:]:
-        scoreboard.reset_score()
+        show_game_over_screen(screen)
         snake.reset_snake()
+        scoreboard.reset_score()
 
     # Draw everything
     food.draw(screen)

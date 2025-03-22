@@ -5,7 +5,7 @@ pygame.font.init()
 # Constants
 WIDTH, HEIGHT = 600, 400  # Screen size
 FONT = pygame.font.Font(None, 36)  # Default Pygame font
-WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
 
 class Scoreboard:
     def __init__(self):
@@ -38,5 +38,5 @@ class Scoreboard:
 
     def draw(self, screen):
         """Render the score on the screen"""
-        score_text = FONT.render(f"Score: {self.score}  High Score: {self.high_score}", True, WHITE)
+        score_text = FONT.render(f"Score: {self.score}  High Score: {self.high_score}", True, BLACK)
         screen.blit(score_text, (WIDTH // 2 - 100, 20))
