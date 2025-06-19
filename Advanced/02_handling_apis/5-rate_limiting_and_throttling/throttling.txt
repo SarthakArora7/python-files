@@ -1,0 +1,8 @@
+Throttling is actively slowing down or delaying requests to stay under rate limits. It’s your response to rate limits.
+
+🧠 Why Are They Important?
+Reason	                         Benefit
+Prevents abuse	               Stops spam or bot attacks
+Protects performance	       Avoids server overload
+Encourages fairness	           Equal access for all users
+Enforces API plans	           Differentiates free vs paid use

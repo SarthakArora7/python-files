@@ -2,12 +2,12 @@ import pygame
 
 WIDTH, HEIGHT = 700, 600
 def show_game_over_screen(screen):
-    # screen.fill((0, 0, 0))  # Black background
-    background_img = pygame.image.load("start_end_bg_img.jpg")  # Optional background
+    # screen.fill((0, 0, 0))  
+    background_img = pygame.image.load("start_end_bg_img.jpg") 
     background_img = pygame.transform.scale(background_img, (WIDTH, HEIGHT))
-    screen.blit(background_img, (0, 0))  # Draw background image
+    screen.blit(background_img, (0, 0))  
     font = pygame.font.Font(None, 50)
-    text = font.render("GAME OVER!", True, (0, 0, 0))  # Black color
+    text = font.render("GAME OVER!", True, (0, 0, 0)) 
     text_rect = text.get_rect(center=(WIDTH//2, HEIGHT//3 - 30))
     screen.blit(text, text_rect)
 
@@ -24,5 +24,5 @@ def show_game_over_screen(screen):
                 pygame.quit()
                 exit()
             if event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_r:  # Restart game
+                if event.key == pygame.K_r: 
                     waiting = False

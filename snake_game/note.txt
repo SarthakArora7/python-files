@@ -1,0 +1,6 @@
+
+    # # Collision with walls
+    # head_x, head_y = snake.body[0]
+    # if head_x < 0 or head_x >= WIDTH or head_y < 0 or head_y >= HEIGHT:
+    #     scoreboard.reset_score()
+    #     snake.reset_snake()

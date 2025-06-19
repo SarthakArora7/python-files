@@ -1,0 +1,10 @@
+Rate limiting sets a hard cap on how many requests you're allowed to make in a fixed time window.
+
+✅ Example:
+GitHub API: 60 requests/hour for unauthenticated users.
+
+Twitter API: 900 requests per 15 minutes for a specific endpoint.
+
+If you exceed the limit, you'll get an HTTP error:
+
+429 Too Many Requests
